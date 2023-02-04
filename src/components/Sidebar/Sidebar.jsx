@@ -1,16 +1,19 @@
-import React, { useState } from "react";
-// import { ReactComponent as Arrow } from "../../assets/images/arrowIcon.svg";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { toggle } from "./../../store/slices/toggleSlice";
 import "./Sidebar.css";
 export default function Sidebar() {
-  const [opeSidebar, setOpeSidebar] = useState(false);
+  const globalState = useSelector((state) => state);
+  const dispatch = useDispatch();
+
   return (
-    <div className={`sidebar ${opeSidebar ? "active" : " "}`}>
+    <div className={`sidebar ${globalState.toggle.sidebar ? "active" : " "}`}>
       <button
         className="sidebar-button"
-        onClick={() => setOpeSidebar(!opeSidebar)}
-      >
-        {/* <Arrow /> */}
-      </button>
+        onClick={() => {
+          dispatch(toggle());
+        }}
+      ></button>
       <ul>
         <li className="sidebar-top">
           <img src="https://picsum.photos/200" alt="" />

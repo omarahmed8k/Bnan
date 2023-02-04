@@ -1,8 +1,10 @@
-import React from 'react'
-import "./Services.css"
+import React from "react";
+import "./Services.css";
 
 export default function Services() {
   return (
-    <div>Services</div>
-  )
+    <div className="services">
+      <h1>Services</h1>
+    </div>
+  );
 }
