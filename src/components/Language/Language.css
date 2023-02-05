@@ -16,6 +16,7 @@
   border-radius: 0px 50% 50% 0px;
   color: #fff;
   font-family: var(--font-bold);
+  line-height: 0;
   z-index: 99999;
 }
 

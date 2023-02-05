@@ -30,7 +30,6 @@
   height: 100%;
   background: #00000080;
   z-index: 1;
-  display: none;
 }
 
 .video-section video {
@@ -88,9 +87,11 @@
 @media (max-width: 768px) {
   .video-section .content h1 {
     font-size: 48px;
+    color: #fff;
   }
   .video-section .content p {
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
+    text-align: justify;
   }
 }
