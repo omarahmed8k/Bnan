@@ -65,7 +65,10 @@
   font-family: var(--font-bold);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .header {
+    background: #ffffff;
+  }
   .header ul li .nav-links {
     display: none;
   }

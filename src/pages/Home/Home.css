@@ -13,12 +13,11 @@
   position: absolute;
   top: 0px;
   left: 0;
+  background-image: url("../../assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 0;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
 }
 
 .video-section::before {
@@ -84,14 +83,16 @@
   margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .video-section::before {
+    background: #00000055;
+  }
   .video-section .content h1 {
     font-size: 48px;
-    color: #fff;
   }
   .video-section .content p {
-    font-size: 16px;
     width: 100%;
-    text-align: justify;
+    font-family: var(--font-bold);
+    color: #fff;
   }
 }
