@@ -1,0 +1,33 @@
+{
+  "lang": "en",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "background": {
+      "title1": "BNAN",
+      "title2": "Network of the future",
+      "desc": "IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
+    },
+    "about": {
+      "title": "",
+      "desc": ""
+    }
+  },
+  "footer": {
+    "title": "All rights reserved"
+  },
+  "contact": {
+    "title": " ",
+    "subtitle": "",
+    "name": "",
+    "phone": " ",
+    "message": "",
+    "email": " ",
+    "send": ""
+  }
+}

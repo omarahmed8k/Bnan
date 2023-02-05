@@ -5,9 +5,11 @@ import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { ReactComponent as Menu } from "../../assets/images/menu.svg";
 import "./Header.css";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -22,19 +24,19 @@ export default function Header() {
             <li>
               <ul className="nav-links">
                 <li>
-                  <NavLink to={`/`}>Home</NavLink>
+                  <NavLink to={`/`}>{t("header.home")}</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`/about`}>About</NavLink>
+                  <NavLink to={`/about`}>{t("header.about")}</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`/services`}>Services</NavLink>
+                  <NavLink to={`/services`}>{t("header.services")}</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`/projects`}>Projects</NavLink>
+                  <NavLink to={`/projects`}>{t("header.projects")}</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`/contact`}>Contact Us</NavLink>
+                  <NavLink to={`/contact`}>{t("header.contact")}</NavLink>
                 </li>
               </ul>
             </li>

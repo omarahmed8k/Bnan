@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggle } from "./../../store/slices/toggleSlice";
+import { ReactComponent as Close } from "../../assets/images/close.svg";
 import "./Sidebar.css";
 export default function Sidebar() {
   const globalState = useSelector((state) => state);
@@ -13,7 +14,9 @@ export default function Sidebar() {
         onClick={() => {
           dispatch(toggle());
         }}
-      ></button>
+      >
+        <Close />
+      </button>
       <ul>
         <li className="sidebar-top">
           <img src="https://picsum.photos/200" alt="" />

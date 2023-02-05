@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import i18n from "./assets/helpers/i18n";
+import { checkFixLang } from "./assets/helpers/lang";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -9,6 +11,11 @@ import Contact from "./pages/Contact/Contact.jsx";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 function App() {
+  const lang = i18n.language;
+  useEffect(() => {
+    checkFixLang(lang);
+  }, [lang]);
+
   const router = createBrowserRouter([
     {
       path: "/",
