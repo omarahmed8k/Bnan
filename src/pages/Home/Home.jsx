@@ -7,10 +7,8 @@ export default function Home() {
   const { t } = useTranslation();
 
   setTimeout(() => {
-    const video = document.querySelector(".video");
-    video.playbackRate = 3.0;
-    console.log("video");
-  }, 1000);
+    document.querySelector(".video").playbackRate = 3;
+  }, 5000);
 
   return (
     <div className="home">

@@ -74,4 +74,16 @@
   font-size: 18px;
   line-height: 2;
   text-transform: capitalize;
+  width: 75%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .video-section .content h1 {
+    font-size: 48px;
+  }
+  .video-section .content p {
+    font-size: 14px;
+    width: 100%;
+  }
 }
