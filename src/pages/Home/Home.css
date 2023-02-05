@@ -13,6 +13,12 @@
   position: absolute;
   top: 0px;
   left: 0;
+  z-index: 0;
+  background: linear-gradient(
+    118deg,
+    var(--main-color) 25%,
+    var(--second-color) 75%
+  );
 }
 
 .video-section::before {
@@ -24,6 +30,7 @@
   height: 100%;
   background: #00000080;
   z-index: 1;
+  display: none;
 }
 
 .video-section video {
