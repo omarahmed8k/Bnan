@@ -4,7 +4,6 @@ import { toggle } from "./../../store/slices/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { ReactComponent as Menu } from "../../assets/images/menu.svg";
-import Sidebar from "../Sidebar/Sidebar";
 import "./Header.css";
 
 export default function Header() {
@@ -52,7 +51,6 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      <Sidebar />
     </>
   );
 }

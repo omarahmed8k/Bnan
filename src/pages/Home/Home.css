@@ -1,0 +1,33 @@
+.home {
+  position: relative;
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-section video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-section .content {
+  position: absolute;
+}
+
+.video-section .content h1 {
+  color: #fff;
+  text-align: center;
+}
+.video-section .content p {
+  color: #fff;
+  text-align: center;
+}
