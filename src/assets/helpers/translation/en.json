@@ -16,6 +16,18 @@
     "about": {
       "title": "",
       "desc": ""
+    },
+    "services": {
+      "title": "Bnan Network of the future",
+      "desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+      "card1Title": "Infrastructure Networking Technology",
+      "card2Title": "Cloud Computing",
+      "card3Title": "Data Center",
+      "card4Title": "Security",
+      "card1Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+      "card2Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+      "card3Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+      "card4Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
     }
   },
   "footer": {
