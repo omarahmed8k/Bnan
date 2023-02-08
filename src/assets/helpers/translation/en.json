@@ -14,8 +14,14 @@
       "desc": "IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
     },
     "about": {
-      "title": "",
-      "desc": ""
+      "title": "About",
+      "desc": "About About",
+      "about1Title": "About",
+      "about1Desc": "About",
+      "about2Title": "About",
+      "about2Desc": "About",
+      "about3Title": "About",
+      "about3Desc": "About"
     },
     "services": {
       "title": "Bnan Network of the future",

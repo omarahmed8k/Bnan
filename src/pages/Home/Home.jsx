@@ -12,6 +12,11 @@ import "./Home.css";
 export default function Home() {
   const { t } = useTranslation();
 
+  const collapseHandler = (e) => {
+    e.target.classList.toggle("active");
+    e.target.nextElementSibling.classList.toggle("active");
+  };
+
   setTimeout(() => {
     document.querySelector(".video").playbackRate = 3;
   }, 5000);
@@ -75,6 +80,47 @@ export default function Home() {
               </div>
               <p>{t("home.services.card4Desc")}</p>
             </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="about-section">
+        <div className="container">
+          <div className="about-flex">
+            <div className="about-img">
+              <img src="https://picsum.photos/500/500" alt="" />
+            </div>
+            <div className="about-content">
+              <h2 className="title">{t("home.about.title")}</h2>
+              <p className="desc">{t("home.about.desc")}</p>
+              <div
+                className="about-collapse"
+                onClick={(e) => {
+                  collapseHandler(e);
+                }}
+              >
+                <h4>{t("home.about.about1Title")}</h4>
+                <h6>{t("home.about.about1Desc")}</h6>
+              </div>
+              <div
+                className="about-collapse"
+                onClick={(e) => {
+                  collapseHandler(e);
+                }}
+              >
+                <h4>{t("home.about.about2Title")}</h4>
+                <h6>{t("home.about.about2Desc")}</h6>
+              </div>
+              <div
+                className="about-collapse"
+                onClick={(e) => {
+                  collapseHandler(e);
+                }}
+              >
+                <h4>{t("home.about.about3Title")}</h4>
+                <h6>{t("home.about.about3Desc")}</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
