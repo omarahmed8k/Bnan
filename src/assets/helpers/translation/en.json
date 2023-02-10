@@ -16,12 +16,12 @@
     "about": {
       "title": "About",
       "desc": "About About",
-      "about1Title": "About",
-      "about1Desc": "About",
-      "about2Title": "About",
-      "about2Desc": "About",
-      "about3Title": "About",
-      "about3Desc": "About"
+      "about1Title": "Lorem, ipsum dolor sit amet",
+      "about1Desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum voluptas facere molestiae nisi corporis quaerat dolores iste odit. Veniam eveniet quia facilis perspiciatis, numquam quo molestias repudiandae tempora cupiditate?",
+      "about2Title": "Lorem, ipsum dolor sit amet",
+      "about2Desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum voluptas facere molestiae nisi corporis quaerat dolores iste odit. Veniam eveniet quia facilis perspiciatis, numquam quo molestias repudiandae tempora cupiditate?",
+      "about3Title": "Lorem, ipsum dolor sit amet",
+      "about3Desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum voluptas facere molestiae nisi corporis quaerat dolores iste odit. Veniam eveniet quia facilis perspiciatis, numquam quo molestias repudiandae tempora cupiditate?"
     },
     "services": {
       "title": "Bnan Network of the future",

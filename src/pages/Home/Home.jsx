@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import ReactTyped from "react-typed";
 import homeVideo from "../../assets/images/videos/video.mp4";
+import aboutImg from "../../assets/images/about-bg.jpg";
 import { ReactComponent as FixedLogo } from "../../assets/images/fixed-logo.svg";
 import { ReactComponent as ServiceImg1 } from "../../assets/images/services/1.svg";
 import { ReactComponent as ServiceImg2 } from "../../assets/images/services/2.svg";
@@ -14,7 +15,18 @@ export default function Home() {
 
   const collapseHandler = (e) => {
     e.target.parentElement.classList.toggle("active");
+    e.target.parentElement.parentElement
+      .querySelectorAll(".about-collapse")
+      .forEach((item) => {
+        if (item !== e.target.parentElement) {
+          item.classList.remove("active");
+        }
+      });
   };
+
+  setTimeout(() => {
+    document.querySelector(".video").playbackRate = 3;
+  }, 5000);
 
   return (
     <div className="home">
@@ -83,13 +95,13 @@ export default function Home() {
         <div className="container">
           <div className="about-flex">
             <div className="about-img">
-              <img src="https://picsum.photos/500/500" alt="" />
+              <img src={aboutImg} alt="" />
             </div>
             <div className="about-content">
               <h2 className="title">{t("home.about.title")}</h2>
               <p className="desc">{t("home.about.desc")}</p>
               <div
-                className="about-collapse"
+                className="about-collapse active"
                 onClick={(e) => {
                   collapseHandler(e);
                 }}
