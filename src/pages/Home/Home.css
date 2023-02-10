@@ -520,4 +520,7 @@
   .about-section .about-flex .about-content p {
     font-size: 16px;
   }
+  .about-section .about-flex .about-content .about-collapse {
+    padding: 0px;
+  }
 }

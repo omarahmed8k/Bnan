@@ -6,6 +6,7 @@ const toggleSlice = createSlice({
   reducers: {
     toggle(state) {
       state.sidebar = !state.sidebar;
+      document.body.classList.toggle("stop-scrolling");
     },
   },
 });
