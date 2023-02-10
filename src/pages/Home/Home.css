@@ -385,7 +385,7 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid var(--main-color);
-  border-radius: 100%;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 .about-section .about-flex .about-content .about-collapse::before {
