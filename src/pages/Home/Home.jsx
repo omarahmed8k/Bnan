@@ -13,13 +13,8 @@ export default function Home() {
   const { t } = useTranslation();
 
   const collapseHandler = (e) => {
-    e.target.classList.toggle("active");
-    e.target.nextElementSibling.classList.toggle("active");
+    e.target.parentElement.classList.toggle("active");
   };
-
-  setTimeout(() => {
-    document.querySelector(".video").playbackRate = 3;
-  }, 5000);
 
   return (
     <div className="home">
