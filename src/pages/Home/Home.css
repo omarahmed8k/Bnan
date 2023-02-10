@@ -523,4 +523,14 @@
   .about-section .about-flex .about-content .about-collapse {
     padding: 0px;
   }
+  .about-section .about-flex .about-content .about-collapse::after {
+    top: 12.5px;
+    right: 5px;
+  }
+  .about-section .about-flex .about-content .about-collapse::before {
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+  }
 }
