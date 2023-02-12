@@ -4,6 +4,7 @@ import { toggle } from "./../../store/slices/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { ReactComponent as Menu } from "../../assets/images/menu.svg";
+import headerImg from "../../assets/images/about-bg.jpg";
 import "./Header.css";
 import { useTranslation } from "react-i18next";
 
@@ -23,7 +24,32 @@ export default function Header() {
             </li>
             <li>
               <ul className="nav-links">
-                <li>
+                <li className="has-menu">
+                  <div className="menu">
+                    <ul className="container">
+                      <li>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                        <NavLink to={`/`}>{t("header.home")}</NavLink>
+                      </li>
+                      <li>
+                        <img src={headerImg} alt="img" />
+                      </li>
+                    </ul>
+                  </div>
                   <NavLink to={`/`}>{t("header.home")}</NavLink>
                 </li>
                 <li>
