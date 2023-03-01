@@ -42,232 +42,245 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div className="video-section">
-        <video loop autoPlay muted className="video">
-          <source src={homeVideo} type="video/mp4" />
-        </video>
-        <div className="content">
-          <div className="container">
-            <h1>
-              <ReactTyped
-                className="typed"
-                strings={[
-                  t("home.background.title1"),
-                  t("home.background.title2"),
-                ]}
-                backDelay={5000}
-                typeSpeed={50}
-                backSpeed={50}
-                loop
-              />
-            </h1>
-            <p>{t("home.background.desc")}</p>
-          </div>
-        </div>
-      </div>
-      <div className="services-section">
-        <FixedLogo className="fixed-logo" />
-        <div className="container">
-          <h2 className="title">{t("home.services.title")}</h2>
-          <p className="desc">{t("home.services.desc")}</p>
-          <div className="services-links">
-            <Link to={"/service/network"} className="services-card">
-              <div className="card-head">
-                <ServiceImg1 />
-                <h3>{t("home.services.card1Title")}</h3>
-              </div>
-              <p>{t("home.services.card1Desc")}</p>
-            </Link>
-            <Link to={"/service/network"} className="services-card">
-              <div className="card-head">
-                <ServiceImg2 />
-                <h3>{t("home.services.card2Title")}</h3>
-              </div>
-              <p>{t("home.services.card2Desc")}</p>
-            </Link>
-            <Link to={"/service/network"} className="services-card">
-              <div className="card-head">
-                <ServiceImg3 />
-                <h3>{t("home.services.card3Title")}</h3>
-              </div>
-              <p>{t("home.services.card3Desc")}</p>
-            </Link>
-            <Link to={"/service/network"} className="services-card">
-              <div className="card-head">
-                <ServiceImg4 />
-                <h3>{t("home.services.card4Title")}</h3>
-              </div>
-              <p>{t("home.services.card4Desc")}</p>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="about-section">
-        <div className="container">
-          <div className="about-flex">
-            <div className="about-img">
-              <img src={aboutImg} alt="" />
-            </div>
-            <div className="about-content">
-              <h2 className="title">{t("home.about.title")}</h2>
-              <p className="desc">{t("home.about.desc")}</p>
-              <div
-                className="about-collapse active"
-                onClick={(e) => {
-                  collapseHandler(e);
-                }}
-              >
-                <h4>{t("home.about.about1Title")}</h4>
-                <h6>{t("home.about.about1Desc")}</h6>
-              </div>
-              <div
-                className="about-collapse"
-                onClick={(e) => {
-                  collapseHandler(e);
-                }}
-              >
-                <h4>{t("home.about.about2Title")}</h4>
-                <h6>{t("home.about.about2Desc")}</h6>
-              </div>
-              <div
-                className="about-collapse"
-                onClick={(e) => {
-                  collapseHandler(e);
-                }}
-              >
-                <h4>{t("home.about.about3Title")}</h4>
-                <h6>{t("home.about.about3Desc")}</h6>
-              </div>
+      <Fade bottom>
+        <div className="video-section">
+          <video loop autoPlay muted className="video">
+            <source src={homeVideo} type="video/mp4" />
+          </video>
+          <div className="content">
+            <div className="container">
+              <h1>
+                <ReactTyped
+                  className="typed"
+                  strings={[
+                    t("home.background.title1"),
+                    t("home.background.title2"),
+                  ]}
+                  backDelay={5000}
+                  typeSpeed={50}
+                  backSpeed={50}
+                  loop
+                />
+              </h1>
+              <p>{t("home.background.desc")}</p>
             </div>
           </div>
         </div>
-      </div>
+      </Fade>
 
-      <div className="featured-section">
-        <div className="container">
-          <h2 className="title">{t("home.about.title")}</h2>
-          <p className="desc">{t("home.about.desc")}</p>
-          <ul className="featured-grid">
-            <li className="featured-card">
-              <div className="featured-img">
-                <img src={featured1} alt="featured-img" />
-              </div>
-              <div className="featured-content">
-                <h4>{t("home.featured.card1Title")}</h4>
-                <p>{t("home.featured.card1Desc")}</p>
-                <Link to={"/service/network"} className="featured-btn">
-                  {t("home.featured.card1Btn")}
-                </Link>
-              </div>
-            </li>
-            <li className="featured-card">
-              <div className="featured-img">
-                <img src={featured2} alt="featured-img" />
-              </div>
-              <div className="featured-content">
-                <h4>{t("home.featured.card1Title")}</h4>
-                <p>{t("home.featured.card1Desc")}</p>
-                <Link to={"/service/network"} className="featured-btn">
-                  {t("home.featured.card1Btn")}
-                </Link>
-              </div>
-            </li>
-            <li className="featured-card">
-              <div className="featured-img">
-                <img src={featured3} alt="featured-img" />
-              </div>
-              <div className="featured-content">
-                <h4>{t("home.featured.card1Title")}</h4>
-                <p>{t("home.featured.card1Desc")}</p>
-                <Link to={"/service/network"} className="featured-btn">
-                  {t("home.featured.card1Btn")}
-                </Link>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="explore-section">
-        <video loop autoPlay muted>
-          <source src={exploreVideo} type="video/mp4" />
-        </video>
-        <div className="content">
+      <Fade bottom>
+        <div className="services-section">
+          <FixedLogo className="fixed-logo" />
           <div className="container">
-            <h1>
-              <ReactTyped
-                className="typed"
-                strings={[
-                  t("home.background.title1"),
-                  t("home.background.title2"),
-                ]}
-                backDelay={5000}
-                typeSpeed={50}
-                backSpeed={50}
-                loop
-              />
-            </h1>
-            <p>{t("home.background.desc")}</p>
+            <h2 className="title">{t("home.services.title")}</h2>
+            <p className="desc">{t("home.services.desc")}</p>
+            <div className="services-links">
+              <Link to={"/service/network"} className="services-card">
+                <div className="card-head">
+                  <ServiceImg1 />
+                  <h3>{t("home.services.card1Title")}</h3>
+                </div>
+                <p>{t("home.services.card1Desc")}</p>
+              </Link>
+              <Link to={"/service/network"} className="services-card">
+                <div className="card-head">
+                  <ServiceImg2 />
+                  <h3>{t("home.services.card2Title")}</h3>
+                </div>
+                <p>{t("home.services.card2Desc")}</p>
+              </Link>
+              <Link to={"/service/network"} className="services-card">
+                <div className="card-head">
+                  <ServiceImg3 />
+                  <h3>{t("home.services.card3Title")}</h3>
+                </div>
+                <p>{t("home.services.card3Desc")}</p>
+              </Link>
+              <Link to={"/service/network"} className="services-card">
+                <div className="card-head">
+                  <ServiceImg4 />
+                  <h3>{t("home.services.card4Title")}</h3>
+                </div>
+                <p>{t("home.services.card4Desc")}</p>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </Fade>
 
-      <div className="testimonials-section">
-        <div className="container">
-          <h2 className="title">{t("home.about.title")}</h2>
-          <p className="desc">{t("home.about.desc")}</p>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={20}
-            autoplay
-            navigation
-            loop={true}
-            freeMode={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Navigation, FreeMode, Pagination]}
-            breakpoints={{
-              576: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              767: {
-                slidesPerView: 2,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
-              },
-            }}
-            className="swiper-container"
-          >
-            <SwiperSlide>
-              <div className="swiper-card">
-                <img src={featured1} alt="testimonial" />
-                <h4>{t("home.testimonials.card1Title")}</h4>
-                <p>{t("home.testimonials.card1Desc")}</p>
+      <Fade bottom>
+        <div className="about-section">
+          <div className="container">
+            <div className="about-flex">
+              <div className="about-img">
+                <img src={aboutImg} alt="" />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="swiper-card">
-                <img src={featured2} alt="testimonial" />
-                <h4>{t("home.testimonials.card1Title")}</h4>
-                <p>{t("home.testimonials.card1Desc")}</p>
+              <div className="about-content">
+                <h2 className="title">{t("home.about.title")}</h2>
+                <p className="desc">{t("home.about.desc")}</p>
+                <div
+                  className="about-collapse active"
+                  onClick={(e) => {
+                    collapseHandler(e);
+                  }}
+                >
+                  <h4>{t("home.about.about1Title")}</h4>
+                  <h6>{t("home.about.about1Desc")}</h6>
+                </div>
+                <div
+                  className="about-collapse"
+                  onClick={(e) => {
+                    collapseHandler(e);
+                  }}
+                >
+                  <h4>{t("home.about.about2Title")}</h4>
+                  <h6>{t("home.about.about2Desc")}</h6>
+                </div>
+                <div
+                  className="about-collapse"
+                  onClick={(e) => {
+                    collapseHandler(e);
+                  }}
+                >
+                  <h4>{t("home.about.about3Title")}</h4>
+                  <h6>{t("home.about.about3Desc")}</h6>
+                </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="swiper-card">
-                <img src={featured3} alt="testimonial" />
-                <h4>{t("home.testimonials.card1Title")}</h4>
-                <p>{t("home.testimonials.card1Desc")}</p>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+            </div>
+          </div>
         </div>
-      </div>
+      </Fade>
+
+      <Fade bottom>
+        <div className="featured-section">
+          <div className="container">
+            <h2 className="title">{t("home.about.title")}</h2>
+            <p className="desc">{t("home.about.desc")}</p>
+            <ul className="featured-grid">
+              <li className="featured-card">
+                <div className="featured-img">
+                  <img src={featured1} alt="featured-img" />
+                </div>
+                <div className="featured-content">
+                  <h4>{t("home.featured.card1Title")}</h4>
+                  <p>{t("home.featured.card1Desc")}</p>
+                  <Link to={"/service/network"} className="featured-btn">
+                    {t("home.featured.card1Btn")}
+                  </Link>
+                </div>
+              </li>
+              <li className="featured-card">
+                <div className="featured-img">
+                  <img src={featured2} alt="featured-img" />
+                </div>
+                <div className="featured-content">
+                  <h4>{t("home.featured.card1Title")}</h4>
+                  <p>{t("home.featured.card1Desc")}</p>
+                  <Link to={"/service/network"} className="featured-btn">
+                    {t("home.featured.card1Btn")}
+                  </Link>
+                </div>
+              </li>
+              <li className="featured-card">
+                <div className="featured-img">
+                  <img src={featured3} alt="featured-img" />
+                </div>
+                <div className="featured-content">
+                  <h4>{t("home.featured.card1Title")}</h4>
+                  <p>{t("home.featured.card1Desc")}</p>
+                  <Link to={"/service/network"} className="featured-btn">
+                    {t("home.featured.card1Btn")}
+                  </Link>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Fade>
+
+      <Fade bottom>
+        <div className="explore-section">
+          <video loop autoPlay muted>
+            <source src={exploreVideo} type="video/mp4" />
+          </video>
+          <div className="content">
+            <div className="container">
+              <h1>
+                <ReactTyped
+                  className="typed"
+                  strings={[
+                    t("home.background.title1"),
+                    t("home.background.title2"),
+                  ]}
+                  backDelay={5000}
+                  typeSpeed={50}
+                  backSpeed={50}
+                  loop
+                />
+              </h1>
+              <p>{t("home.background.desc")}</p>
+            </div>
+          </div>
+        </div>
+      </Fade>
+
+      <Fade bottom>
+        <div className="testimonials-section">
+          <div className="container">
+            <h2 className="title">{t("home.about.title")}</h2>
+            <p className="desc">{t("home.about.desc")}</p>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={20}
+              autoplay
+              navigation
+              loop={true}
+              freeMode={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Navigation, FreeMode, Pagination]}
+              breakpoints={{
+                576: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                767: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
+              className="swiper-container"
+            >
+              <SwiperSlide>
+                <div className="swiper-card">
+                  <img src={featured1} alt="testimonial" />
+                  <h4>{t("home.testimonials.card1Title")}</h4>
+                  <p>{t("home.testimonials.card1Desc")}</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiper-card">
+                  <img src={featured2} alt="testimonial" />
+                  <h4>{t("home.testimonials.card1Title")}</h4>
+                  <p>{t("home.testimonials.card1Desc")}</p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiper-card">
+                  <img src={featured3} alt="testimonial" />
+                  <h4>{t("home.testimonials.card1Title")}</h4>
+                  <p>{t("home.testimonials.card1Desc")}</p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </Fade>
     </div>
   );
 }
