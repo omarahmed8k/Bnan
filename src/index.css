@@ -254,6 +254,32 @@ ul {
   font-size: 12px;
 }
 
+.title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  background: linear-gradient(
+    118deg,
+    var(--main-color) 25%,
+    var(--second-color) 75%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateText 3s linear infinite;
+  background-size: 200% 100%;
+}
+
+.desc {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
@@ -264,30 +290,8 @@ ul {
   .container {
     max-width: 768px;
   }
-  .page .timer {
-    flex-direction: column;
-  }
-
-  .page .timer li:not(:last-child):after {
-    display: none;
-  }
-  .page .input-container {
-    width: 100%;
-  }
-
-  .page .input-container input {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    text-align: center;
-  }
-
-  .page .input-container button {
-    width: 100%;
-    border-radius: 0px 0px 10px 10px;
-  }
-
-  .page .powered {
-    width: 100%;
+  .title {
+    font-size: 48px;
   }
 }
 
@@ -297,9 +301,6 @@ ul {
   }
   .page .typed {
     font-size: 60px;
-  }
-  .page .timer li p:first-child {
-    font-size: 80px;
   }
 }
 
