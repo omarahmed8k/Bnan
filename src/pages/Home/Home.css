@@ -532,6 +532,10 @@
   padding: 100px 0px;
 }
 
+[dir="rtl"] .testimonials-section .swiper {
+  direction: ltr;
+}
+
 .testimonials-section .swiper .swiper-card {
   width: 100%;
   background-color: #fff;
