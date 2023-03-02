@@ -57,12 +57,15 @@
     "title": "All rights reserved"
   },
   "contact": {
-    "title": " ",
-    "subtitle": "",
-    "name": "",
-    "phone": " ",
-    "message": "",
-    "email": " ",
-    "send": ""
+    "contactTitle": "contactTitle",
+    "contactText": "contactText",
+    "contactDetails": "contactDetails",
+    "phoneNumber": "phoneNumber",
+    "emailAddress": "emailAddress",
+    "name": "name",
+    "phone": "phone",
+    "email": "email",
+    "message": "message",
+    "send": "send"
   }
 }

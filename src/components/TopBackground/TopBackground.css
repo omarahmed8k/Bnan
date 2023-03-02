@@ -1,0 +1,64 @@
+.bacground-top {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  /* background-image: url(../images/bg-img.png); */
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: 2;
+}
+
+.bacground-top::after {
+  content: "";
+  position: absolute;
+  left: -150px;
+  bottom: 20px;
+  height: 400px;
+  width: 400px;
+  /* background-image: url(../images/bg-logo.svg); */
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.bacground-top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, var(--main-color), var(--second-color));
+  opacity: 0.5;
+  z-index: -2;
+}
+
+.bacground-top .background-content {
+  padding-top: 185px;
+  width: 100%;
+}
+
+.bacground-top .background-content h4 {
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: var(--font-bold);
+  margin-bottom: 10px;
+}
+
+[dir="rtl"] .bacground-top .background-content h4 {
+  letter-spacing: 0px;
+}
+
+.bacground-top .background-content p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 2;
+  font-family: var(--font-regular);
+  text-transform: capitalize;
+}
