@@ -3,9 +3,26 @@
   "header": {
     "home": "Home",
     "about": "About",
+    "technologySolutions": "Technology Solutions",
+    "partners": "Partners",
     "services": "Services",
-    "projects": "Projects",
-    "contact": "Contact"
+    "solutions": "Solutions",
+    "itSupportSystem": "IT Support System",
+    "integration": "Integration",
+    "professionalServices": "Professional Services",
+    "networkingSecurity": "Networking & Security",
+    "systems": "Systems",
+    "cloudComputing": "Cloud Computing",
+    "dataCenter": "Data Center",
+    "infrastructure": "Core Infrastructure",
+    "contact": "Contact",
+    "itServiceManagement": "IT Service Management",
+    "cloudInfrastructure": "Cloud Infrastructure",
+    "iTSecurity": "IT Security",
+    "businessApplication": "Business Application",
+    "backupRecovery": "Backup / Recovery",
+    "volumeLicensing": "Volume Licensing",
+    "communicationCollaboration": "Communication & Collaboration"
   },
   "home": {
     "background": {

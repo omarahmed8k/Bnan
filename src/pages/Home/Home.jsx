@@ -108,98 +108,101 @@ export default function Home() {
         </div>
       </Fade>
 
-      <Fade bottom>
-        <div className="about-section">
-          <div className="container">
-            <div className="about-flex">
-              <div className="about-img">
-                <img src={aboutImg} alt="" />
-              </div>
-              <div className="about-content">
-                <h2 className="title">{t("home.about.title")}</h2>
-                <p className="desc">{t("home.about.desc")}</p>
-                <div
-                  className="about-collapse active"
-                  onClick={(e) => {
-                    collapseHandler(e);
-                  }}
-                >
-                  <h4>{t("home.about.about1Title")}</h4>
-                  <h6>{t("home.about.about1Desc")}</h6>
+      <div className="bg-shape">
+        <Fade bottom>
+          <div className="about-section">
+            <div className="container">
+              <div className="about-flex">
+                <div className="about-img">
+                  <img src={aboutImg} alt="" />
                 </div>
-                <div
-                  className="about-collapse"
-                  onClick={(e) => {
-                    collapseHandler(e);
-                  }}
-                >
-                  <h4>{t("home.about.about2Title")}</h4>
-                  <h6>{t("home.about.about2Desc")}</h6>
-                </div>
-                <div
-                  className="about-collapse"
-                  onClick={(e) => {
-                    collapseHandler(e);
-                  }}
-                >
-                  <h4>{t("home.about.about3Title")}</h4>
-                  <h6>{t("home.about.about3Desc")}</h6>
+                <div className="about-content">
+                  <h2 className="title">{t("home.about.title")}</h2>
+                  <p className="desc">{t("home.about.desc")}</p>
+                  <div
+                    className="about-collapse active"
+                    onClick={(e) => {
+                      collapseHandler(e);
+                    }}
+                  >
+                    <h4>{t("home.about.about1Title")}</h4>
+                    <h6>{t("home.about.about1Desc")}</h6>
+                  </div>
+                  <div
+                    className="about-collapse"
+                    onClick={(e) => {
+                      collapseHandler(e);
+                    }}
+                  >
+                    <h4>{t("home.about.about2Title")}</h4>
+                    <h6>{t("home.about.about2Desc")}</h6>
+                  </div>
+                  <div
+                    className="about-collapse"
+                    onClick={(e) => {
+                      collapseHandler(e);
+                    }}
+                  >
+                    <h4>{t("home.about.about3Title")}</h4>
+                    <h6>{t("home.about.about3Desc")}</h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </Fade>
+        </Fade>
 
-      <Fade bottom>
-        <div className="featured-section">
-          <div className="container">
-            <h2 className="title">{t("home.about.title")}</h2>
-            <p className="desc">{t("home.about.desc")}</p>
-            <ul className="featured-grid">
-              <li className="featured-card">
-                <div className="featured-img">
-                  <img src={featured1} alt="featured-img" />
-                </div>
-                <div className="featured-content">
-                  <h4>{t("home.featured.card1Title")}</h4>
-                  <p>{t("home.featured.card1Desc")}</p>
-                  <Link to={"/service/network"} className="featured-btn">
-                    {t("home.featured.card1Btn")}
-                  </Link>
-                </div>
-              </li>
-              <li className="featured-card">
-                <div className="featured-img">
-                  <img src={featured2} alt="featured-img" />
-                </div>
-                <div className="featured-content">
-                  <h4>{t("home.featured.card1Title")}</h4>
-                  <p>{t("home.featured.card1Desc")}</p>
-                  <Link to={"/service/network"} className="featured-btn">
-                    {t("home.featured.card1Btn")}
-                  </Link>
-                </div>
-              </li>
-              <li className="featured-card">
-                <div className="featured-img">
-                  <img src={featured3} alt="featured-img" />
-                </div>
-                <div className="featured-content">
-                  <h4>{t("home.featured.card1Title")}</h4>
-                  <p>{t("home.featured.card1Desc")}</p>
-                  <Link to={"/service/network"} className="featured-btn">
-                    {t("home.featured.card1Btn")}
-                  </Link>
-                </div>
-              </li>
-            </ul>
+        <Fade bottom>
+          <div className="featured-section">
+            <div className="container">
+              <h2 className="title">{t("home.about.title")}</h2>
+              <p className="desc">{t("home.about.desc")}</p>
+              <ul className="featured-grid">
+                <li className="featured-card">
+                  <div className="featured-img">
+                    <img src={featured1} alt="featured-img" />
+                  </div>
+                  <div className="featured-content">
+                    <h4>{t("home.featured.card1Title")}</h4>
+                    <p>{t("home.featured.card1Desc")}</p>
+                    <Link to={"/service/network"} className="featured-btn">
+                      {t("home.featured.card1Btn")}
+                    </Link>
+                  </div>
+                </li>
+                <li className="featured-card">
+                  <div className="featured-img">
+                    <img src={featured2} alt="featured-img" />
+                  </div>
+                  <div className="featured-content">
+                    <h4>{t("home.featured.card1Title")}</h4>
+                    <p>{t("home.featured.card1Desc")}</p>
+                    <Link to={"/service/network"} className="featured-btn">
+                      {t("home.featured.card1Btn")}
+                    </Link>
+                  </div>
+                </li>
+                <li className="featured-card">
+                  <div className="featured-img">
+                    <img src={featured3} alt="featured-img" />
+                  </div>
+                  <div className="featured-content">
+                    <h4>{t("home.featured.card1Title")}</h4>
+                    <p>{t("home.featured.card1Desc")}</p>
+                    <Link to={"/service/network"} className="featured-btn">
+                      {t("home.featured.card1Btn")}
+                    </Link>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
 
       <Fade bottom>
         <div className="explore-section">
+          <FixedLogo className="fixed-logo" />
           <video loop autoPlay muted>
             <source src={exploreVideo} type="video/mp4" />
           </video>
@@ -226,6 +229,7 @@ export default function Home() {
 
       <Fade bottom>
         <div className="testimonials-section">
+          <FixedLogo className="fixed-logo fixed-right" />
           <div className="container">
             <h2 className="title">{t("home.about.title")}</h2>
             <p className="desc">{t("home.about.desc")}</p>
