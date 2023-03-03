@@ -16,11 +16,12 @@ import aboutImg from "../../assets/images/about-bg.jpg";
 import featured1 from "../../assets/images/featured/feature1.jpg";
 import featured2 from "../../assets/images/featured/feature2.jpg";
 import featured3 from "../../assets/images/featured/feature3.jpg";
-import { ReactComponent as FixedLogo } from "../../assets/images/fixed-logo.svg";
+import { ReactComponent as FixedLogo } from "../../assets/images/svgs/fixed-logo.svg";
 import { ReactComponent as ServiceImg1 } from "../../assets/images/services/1.svg";
 import { ReactComponent as ServiceImg2 } from "../../assets/images/services/2.svg";
 import { ReactComponent as ServiceImg3 } from "../../assets/images/services/3.svg";
 import { ReactComponent as ServiceImg4 } from "../../assets/images/services/4.svg";
+import ContactForm from "../../components/ContactForm/ContactForm";
 import "./Home.css";
 export default function Home() {
   const { t } = useTranslation();
@@ -284,6 +285,10 @@ export default function Home() {
             </Swiper>
           </div>
         </div>
+      </Fade>
+
+      <Fade bottom>
+        <ContactForm />
       </Fade>
     </div>
   );

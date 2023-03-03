@@ -1,18 +1,12 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { toggle } from "./../../store/slices/toggleSlice";
 import { NavLink, Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import { ReactComponent as Menu } from "../../assets/images/menu.svg";
-import headerImg from "../../assets/images/about-bg.jpg";
+import { ReactComponent as Logo } from "../../assets/images/svgs/logo.svg";
 import cloudImg from "../../assets/images/cloud.jpg";
-import networkImg from "../../assets/images/network.jpg";
 import partnerImg from "../../assets/images/partners.jpg";
 import "./Header.css";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
-  const dispatch = useDispatch();
   const { t } = useTranslation();
 
   return (
@@ -106,14 +100,7 @@ export default function Header() {
               </ul>
             </li>
             <li>
-              <div
-                className="menu"
-                onClick={() => {
-                  dispatch(toggle());
-                }}
-              >
-                <Menu />
-              </div>
+              <button className="main-btn">{t("header.requestAQuote")}</button>
             </li>
           </ul>
         </div>

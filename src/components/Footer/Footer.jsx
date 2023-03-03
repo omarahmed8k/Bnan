@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as Logo } from "../../assets/images/svgs/logo.svg";
 
 export default function Footer() {
   const { t } = useTranslation();

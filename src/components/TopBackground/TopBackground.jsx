@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "./TopBackground.css";
 
 function TopBackground({ title, text }) {
   const { t } = useTranslation();

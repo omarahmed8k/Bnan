@@ -232,7 +232,7 @@
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url(../../assets/images/fixed-logo.svg);
+  background-image: url('../../assets/images/svgs/fixed-logo.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@
 }
 
 .bg-shape {
-  background-image: url(../../assets/images/shapes/2.png);
+  background-image: url('../../assets/images/shapes/2.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
