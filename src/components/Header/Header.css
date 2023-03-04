@@ -136,11 +136,6 @@
 }
 
 .header .has-menu .menu ul li h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: 10px;
-  font-family: var(--font-bold);
 }
 
 .header .has-menu .menu ul li a {
@@ -177,6 +172,20 @@
 
 .header .has-menu .menu ul li a:hover::before {
   left: -5px;
+}
+
+.header .has-menu .menu ul li h4 a {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-family: var(--font-bold);
+  padding: 0;
+  line-height: 1.5;
+}
+
+.header .has-menu .menu ul li h4 a::before {
+  display: none;
 }
 
 .header .has-menu .menu ul li img {

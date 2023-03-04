@@ -28,30 +28,48 @@ export default function Header() {
                   <NavLink to={`/about`}>{t("header.about")}</NavLink>
                 </li>
                 <li className="has-menu">
-                  <NavLink to={`/solutions`}>
+                  <NavLink to={`/services-and-solutions`}>
                     {t("header.technologySolutions")}
                   </NavLink>
                   <div className="menu">
                     <ul className="container">
                       <li>
-                        <h4>{t("header.services")}</h4>
-                        <NavLink to={`/`}>
+                        <h4>
+                          <NavLink to={`/services`}>
+                            {t("header.services")}
+                          </NavLink>
+                        </h4>
+                        <NavLink to={`/services/it-support-system`}>
                           {t("header.itSupportSystem")}
                         </NavLink>
-                        <NavLink to={`/`}>
+                        <NavLink to={`/services/professional-services`}>
                           {t("header.professionalServices")}
                         </NavLink>
-                        <NavLink to={`/`}>{t("header.integration")}</NavLink>
-                        <NavLink to={`/`}>
+                        <NavLink to={`/services/integration`}>
+                          {t("header.integration")}
+                        </NavLink>
+                        <NavLink to={`/services/networking-security`}>
                           {t("header.networkingSecurity")}
                         </NavLink>
                       </li>
                       <li>
-                        <h4>{t("header.solutions")}</h4>
-                        <NavLink to={`/`}>{t("header.infrastructure")}</NavLink>
-                        <NavLink to={`/`}>{t("header.systems")}</NavLink>
-                        <NavLink to={`/`}>{t("header.cloudComputing")}</NavLink>
-                        <NavLink to={`/`}>{t("header.dataCenter")}</NavLink>
+                        <h4>
+                          <NavLink to={`/solutions`}>
+                            {t("header.solutions")}
+                          </NavLink>
+                        </h4>
+                        <NavLink to={`/solutions/core-infrastructure`}>
+                          {t("header.infrastructure")}
+                        </NavLink>
+                        <NavLink to={`/solutions/systems`}>
+                          {t("header.systems")}
+                        </NavLink>
+                        <NavLink to={`/solutions/cloud-computing`}>
+                          {t("header.cloudComputing")}
+                        </NavLink>
+                        <NavLink to={`/solutions/data-center`}>
+                          {t("header.dataCenter")}
+                        </NavLink>
                       </li>
                       <li>
                         <img src={cloudImg} alt="cloudImg" />
@@ -64,15 +82,21 @@ export default function Header() {
                   <div className="menu">
                     <ul className="container">
                       <li>
-                        <h4>{t("header.partners")}</h4>
-                        <NavLink to={`/`}>
+                        <h4>
+                          <NavLink to={`/partners`}>
+                            {t("header.partners")}
+                          </NavLink>
+                        </h4>
+                        <NavLink to={`/partners/it-service-management`}>
                           {t("header.itServiceManagement")}
                         </NavLink>
-                        <NavLink to={`/`}>
+                        <NavLink to={`/partners/cloud-infrastructure`}>
                           {t("header.cloudInfrastructure")}
                         </NavLink>
-                        <NavLink to={`/`}>{t("header.iTSecurity")}</NavLink>
-                        <NavLink to={`/`}>
+                        <NavLink to={`/partners/it-security`}>
+                          {t("header.iTSecurity")}
+                        </NavLink>
+                        <NavLink to={`/partners/business-application`}>
                           {t("header.businessApplication")}
                         </NavLink>
                       </li>
@@ -80,11 +104,13 @@ export default function Header() {
                         <h4>
                           <br />
                         </h4>
-                        <NavLink to={`/`}>{t("header.backupRecovery")}</NavLink>
-                        <NavLink to={`/`}>
+                        <NavLink to={`/partners/backup-recovery`}>
+                          {t("header.backupRecovery")}
+                        </NavLink>
+                        <NavLink to={`/partners/volume-licensing`}>
                           {t("header.volumeLicensing")}
                         </NavLink>
-                        <NavLink to={`/`}>
+                        <NavLink to={`/partners/communication-collaboration`}>
                           {t("header.communicationCollaboration")}
                         </NavLink>
                       </li>
@@ -100,7 +126,9 @@ export default function Header() {
               </ul>
             </li>
             <li>
-              <button className="main-btn">{t("header.requestAQuote")}</button>
+              <Link to={`/contact`} className="main-btn">
+                {t("header.requestAQuote")}
+              </Link>
             </li>
           </ul>
         </div>
