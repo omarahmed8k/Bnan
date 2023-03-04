@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Outlet } from "react-router-dom";
 import TopBackground from "../TopBackground/TopBackground";
 import "./ContentArea.css";
@@ -7,9 +8,10 @@ function ContentArea({ title, text, children }) {
   return (
     <>
       <TopBackground title={title} text={text} />
-      <div className="content-area">
+      <Fade bottom>
+        <div className="content-area">{children}</div>
         <Outlet />
-      </div>
+      </Fade>
     </>
   );
 }

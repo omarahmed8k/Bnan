@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import i18n from "./assets/helpers/i18n";
 import { checkFixLang } from "./assets/helpers/lang";
 import Layout from "./components/Layout/Layout";
@@ -40,23 +40,27 @@ function App() {
       errorElement: <ErrorPage />,
       children: [
         { index: true, element: <Home /> },
-        { path: "home", element: <Home /> },
+        { path: "/home", element: <Home /> },
         {
-          path: "about",
+          path: "/about",
           element: <About />,
         },
         {
-          path: "contact",
+          path: "/contact",
           element: <Contact />,
         },
         {
-          path: "services-and-solutions",
+          path: "/services-and-solutions",
           element: <ServicesSolutions />,
         },
         {
-          path: "services",
+          path: "/services/*",
           element: <Services />,
           children: [
+            {
+              element: <Outlet />,
+              index: true,
+            },
             {
               path: "it-support-system",
               element: <ITSupportSystem />,
@@ -76,9 +80,13 @@ function App() {
           ],
         },
         {
-          path: "solutions",
+          path: "/solutions/*",
           element: <Solutions />,
           children: [
+            {
+              element: <Outlet />,
+              index: true,
+            },
             {
               path: "core-infrastructure",
               element: <CoreInfrastructure />,
@@ -99,9 +107,13 @@ function App() {
         },
 
         {
-          path: "partners",
+          path: "/partners/*",
           element: <Partners />,
           children: [
+            {
+              element: <Outlet />,
+              index: true,
+            },
             {
               path: "it-service-management",
               element: <ITServiceManagement />,

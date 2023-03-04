@@ -37,9 +37,11 @@ export default function Home() {
       });
   };
 
-  setTimeout(() => {
-    document.querySelector(".video").playbackRate = 3;
-  }, 5000);
+  if (window.location.pathname === "/") {
+    setTimeout(() => {
+      document.querySelector(".video").playbackRate = 3;
+    }, 5000);
+  }
 
   return (
     <div className="home">
