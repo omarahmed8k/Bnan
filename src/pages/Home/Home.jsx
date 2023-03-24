@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import ReactTyped from "react-typed";
@@ -12,10 +12,11 @@ import "swiper/css/autoplay";
 import "swiper/css/free-mode";
 import homeVideo from "../../assets/images/videos/video.mp4";
 import exploreVideo from "../../assets/images/videos/explore.ogv";
-import aboutImg from "../../assets/images/about-bg.jpg";
-import featured1 from "../../assets/images/featured/feature1.jpg";
-import featured2 from "../../assets/images/featured/feature2.jpg";
-import featured3 from "../../assets/images/featured/feature3.jpg";
+import aboutImg from "../../assets/images/global/about-bg.jpg";
+import featured1 from "../../assets/images/featured/featured1.jpg";
+import featured2 from "../../assets/images/featured/featured2.jpg";
+import featured3 from "../../assets/images/featured/featured3.jpg";
+import profile from "../../assets/images/global/profile.png";
 import { ReactComponent as FixedLogo } from "../../assets/images/svgs/fixed-logo.svg";
 import { ReactComponent as ServiceImg1 } from "../../assets/images/services/1.svg";
 import { ReactComponent as ServiceImg2 } from "../../assets/images/services/2.svg";
@@ -25,6 +26,7 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import "./Home.css";
 export default function Home() {
   const { t } = useTranslation();
+  const [collapse , setCollapse] = useState(false)
 
   const collapseHandler = (e) => {
     e.target.parentElement.classList.toggle("active");
@@ -36,6 +38,10 @@ export default function Home() {
         }
       });
   };
+
+  function collapseDiv(e) {
+    
+  }
 
   if (window.location.pathname === "/") {
     setTimeout(() => {
@@ -158,8 +164,8 @@ export default function Home() {
         <Fade bottom>
           <div className="featured-section">
             <div className="container">
-              <h2 className="title">{t("home.about.title")}</h2>
-              <p className="desc">{t("home.about.desc")}</p>
+              <h2 className="title">{t("home.featured.title")}</h2>
+              <p className="desc">{t("home.featured.desc")}</p>
               <ul className="featured-grid">
                 <li className="featured-card">
                   <div className="featured-img">
@@ -168,8 +174,8 @@ export default function Home() {
                   <div className="featured-content">
                     <h4>{t("home.featured.card1Title")}</h4>
                     <p>{t("home.featured.card1Desc")}</p>
-                    <Link to={"/service/network"} className="featured-btn">
-                      {t("home.featured.card1Btn")}
+                    <Link to={"/services/it-support-system"} className="featured-btn">
+                      {t("home.featured.cardBtn")}
                     </Link>
                   </div>
                 </li>
@@ -178,10 +184,10 @@ export default function Home() {
                     <img src={featured2} alt="featured-img" />
                   </div>
                   <div className="featured-content">
-                    <h4>{t("home.featured.card1Title")}</h4>
-                    <p>{t("home.featured.card1Desc")}</p>
-                    <Link to={"/service/network"} className="featured-btn">
-                      {t("home.featured.card1Btn")}
+                    <h4>{t("home.featured.card2Title")}</h4>
+                    <p>{t("home.featured.card2Desc")}</p>
+                    <Link to={"/services/networking-security"} className="featured-btn">
+                      {t("home.featured.cardBtn")}
                     </Link>
                   </div>
                 </li>
@@ -190,10 +196,10 @@ export default function Home() {
                     <img src={featured3} alt="featured-img" />
                   </div>
                   <div className="featured-content">
-                    <h4>{t("home.featured.card1Title")}</h4>
-                    <p>{t("home.featured.card1Desc")}</p>
-                    <Link to={"/service/network"} className="featured-btn">
-                      {t("home.featured.card1Btn")}
+                    <h4>{t("home.featured.card3Title")}</h4>
+                    <p>{t("home.featured.card3Desc")}</p>
+                    <Link to={"/services/integration"} className="featured-btn">
+                      {t("home.featured.cardBtn")}
                     </Link>
                   </div>
                 </li>
@@ -234,8 +240,8 @@ export default function Home() {
         <div className="testimonials-section">
           <FixedLogo className="fixed-logo fixed-right" />
           <div className="container">
-            <h2 className="title">{t("home.about.title")}</h2>
-            <p className="desc">{t("home.about.desc")}</p>
+            <h2 className="title">{t("home.testimonials.title")}</h2>
+            <p className="desc">{t("home.testimonials.desc")}</p>
             <Swiper
               slidesPerView={1}
               spaceBetween={20}
@@ -265,23 +271,23 @@ export default function Home() {
             >
               <SwiperSlide>
                 <div className="swiper-card">
-                  <img src={featured1} alt="testimonial" />
+                  <img src={profile} alt="testimonial" />
                   <h4>{t("home.testimonials.card1Title")}</h4>
                   <p>{t("home.testimonials.card1Desc")}</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper-card">
-                  <img src={featured2} alt="testimonial" />
-                  <h4>{t("home.testimonials.card1Title")}</h4>
-                  <p>{t("home.testimonials.card1Desc")}</p>
+                  <img src={profile} alt="testimonial" />
+                  <h4>{t("home.testimonials.card2Title")}</h4>
+                  <p>{t("home.testimonials.card2Desc")}</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="swiper-card">
-                  <img src={featured3} alt="testimonial" />
-                  <h4>{t("home.testimonials.card1Title")}</h4>
-                  <p>{t("home.testimonials.card1Desc")}</p>
+                  <img src={profile} alt="testimonial" />
+                  <h4>{t("home.testimonials.card3Title")}</h4>
+                  <p>{t("home.testimonials.card3Desc")}</p>
                 </div>
               </SwiperSlide>
             </Swiper>

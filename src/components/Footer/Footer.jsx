@@ -19,39 +19,39 @@ export default function Footer() {
             </div>
             <div className="footer-item">
               <h3>{t("footer.title2")}</h3>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"services/it-support-system"} className="footer-link">
+                {t("footer.solutionLink1")}
               </Link>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"services/professional-services"} className="footer-link">
+                {t("footer.solutionLink2")}
               </Link>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"services/integration"} className="footer-link">
+                {t("footer.solutionLink3")}
               </Link>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"services/networking-security"} className="footer-link">
+                {t("footer.solutionLink4")}
               </Link>
             </div>
             <div className="footer-item">
               <h3>{t("footer.title3")}</h3>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"solutions/core-infrastructure"} className="footer-link">
+                {t("footer.servicesLink1")}
               </Link>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"solutions/systems"} className="footer-link">
+                {t("footer.servicesLink2")}
               </Link>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"solutions/cloud-computing"} className="footer-link">
+                {t("footer.servicesLink3")}
               </Link>
-              <Link to={"/about"} className="footer-link">
-                {t("footer.about")}
+              <Link to={"solutions/data-center"} className="footer-link">
+                {t("footer.servicesLink4")}
               </Link>
             </div>
             <div className="footer-item">
               <h3>{t("footer.title4")}</h3>
-              <p>{t("footer.addressDesc")}</p>
-              <p>{t("footer.phoneDesc")}</p>
-              <p>{t("footer.emailDesc")}</p>
+              <p>{t("footer.phone")}</p>
+              <p>{t("footer.email")}</p>
+              <p>{t("footer.location")}</p>
             </div>
           </div>
         </div>

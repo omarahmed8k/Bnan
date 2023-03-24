@@ -29,44 +29,77 @@
     "background": {
       "title1": "BNAN",
       "title2": "Network of the future",
-      "desc": "IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
+      "desc": "IT services We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
     },
     "about": {
-      "title": "About",
-      "desc": "About About",
-      "about1Title": "Lorem, ipsum dolor sit amet",
-      "about1Desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum voluptas facere molestiae nisi corporis quaerat dolores iste odit. Veniam eveniet quia facilis perspiciatis, numquam quo molestias repudiandae tempora cupiditate?",
-      "about2Title": "Lorem, ipsum dolor sit amet",
-      "about2Desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum voluptas facere molestiae nisi corporis quaerat dolores iste odit. Veniam eveniet quia facilis perspiciatis, numquam quo molestias repudiandae tempora cupiditate?",
-      "about3Title": "Lorem, ipsum dolor sit amet",
-      "about3Desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum nostrum voluptas facere molestiae nisi corporis quaerat dolores iste odit. Veniam eveniet quia facilis perspiciatis, numquam quo molestias repudiandae tempora cupiditate?"
+      "title": "BNAN Story",
+      "desc": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+      "about1Title": "Our Values",
+      "about1Desc": "Quality and excellence, Integrity and honesty, Teamwork and collaboration, Customer focus, Innovation and creativity, Respect and trust.",
+      "about2Title": "Our Mission",
+      "about2Desc": "Helping organizations to grow better not just bigger, focusing on efficiency and not just effectiveness.",
+      "about3Title": "Our Vision",
+      "about3Desc": "To be the most customer centric company for IT solutions in the world." 
     },
     "services": {
-      "title": "Bnan Network of the future",
-      "desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+      "title": "Network of the future",
+      "desc": "BNAN is a leading provider of IT services, consulting, and business solutions, We Provide the next services...",
       "card1Title": "Infrastructure Networking Technology",
       "card2Title": "Cloud Computing",
       "card3Title": "Data Center",
       "card4Title": "Security",
-      "card1Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
-      "card2Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
-      "card3Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
-      "card4Desc": "BNAN is a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
+      "card1Desc": "Networking hardware which comprises routers, switches, LAN cards, wireless routers, cables.",
+      "card2Desc": "Cloud computing is the on-demand availability of computing resources as services over the internet.",
+      "card3Desc": "like a giant brain that powers the digital world, storing and processing data for businesses and organizations.",
+      "card4Desc": "the art of protecting data and systems from unauthorized access and cyberattacks that can cause damage or theft."
+    },
+    "featured": {
+      "title": "Featured Services",
+      "desc": "BNAN is a leading provider of IT services, consulting, and business solutions, We Provide the next services...",
+      "card1Title": "IT Support Service",
+      "card2Title": "IT Network Security Service",
+      "card3Title": "IT Integration Service",
+      "card1Desc": "It is intended for critical business applications to be operational. Whenever something goes wrong, it needs to be fixed right away! Here is where we come in.",
+      "card2Desc": "combines multiple layers of defenses at the edge and in the network. Each network security layer implements policies and controls. Authorized users gain access to network resources.",
+      "card3Desc": "We have something for everyone and any budget, whether you're beginning from scratch or updating your services and require help establishing IT strategy or putting IT solutions into place.",
+      "cardBtn": "See More"
+    },
+    "testimonials":{
+      "title": "What Our Clients Say",
+      "desc": "We are proud to have worked with some of the world's most innovative companies. Here's what they have to say about us.",
+      "card1Title": "Mr.Omar Almalki",
+      "card2Title": "Eng.Ahmed Ali",
+      "card3Title": "Eng.Mohammed Abdulaziz",
+      "card1Desc": "Great Team and Great Service, I recommend BNAN to everyone.",
+      "card2Desc": "I am very happy with the service provided by BNAN",
+      "card3Desc": "BNAN is a great company, I am very happy with the service provided by BNAN"
     }
   },
-  "footer": {
-    "title": "All rights reserved"
-  },
   "contact": {
-    "contactTitle": "contactTitle",
-    "contactText": "contactText",
-    "contactDetails": "contactDetails",
-    "phoneNumber": "phoneNumber",
-    "emailAddress": "emailAddress",
+    "title": "Contact Us",
+    "desc": "Keep in touch with us, we are always here to help you.",
     "name": "name",
     "phone": "phone",
     "email": "email",
     "message": "message",
-    "send": "send"
+    "send": "Send"
+  },
+  "footer": {
+    "title1": "Bana Network",
+    "desc1" : "a leading provider of IT services, consulting, and business solutions",
+    "title2": "Services",
+    "title3": "Solutions",
+    "title4": "Contacts",
+    "servicesLink1": "IT Support System",
+    "servicesLink2": "Professional Services",
+    "servicesLink3": "Integration",
+    "servicesLink4": "Networking & Security",
+    "solutionLink1": "Core Infrastructure",
+    "solutionLink2": "Systems",
+    "solutionLink3": "Cloud Computing",
+    "solutionLink4": "Data Center",
+    "phone": "+966 11 488 0000",
+    "email": "info@bnansa.com",
+    "location": "Riyadh, Saudi Arabia"
   }
 }

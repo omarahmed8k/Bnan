@@ -1,25 +1,19 @@
 /* ! Defaults */
-
 /* Arabic-Fonts */
 @font-face {
-  font-family: "Tajawal-Bold";
-  src: url(assets/fonts/Tajawal-Bold.ttf);
+  font-family: "Kufi-Bold";
+  src: url(assets/fonts/Kufi-Bold.ttf);
 }
 
 @font-face {
-  font-family: "Tajawal-Medium";
-  src: url(assets/fonts/Tajawal-Medium.ttf);
+  font-family: "Kufi-Regular";
+  src: url(assets/fonts/Kufi-Regular.ttf);
 }
 
-@font-face {
-  font-family: "Tajawal-Regular";
-  src: url(assets/fonts/Tajawal-Regular.ttf);
-}
 /* Main Values */
 :root {
-  --font-bold: "Tajawal-Bold", sans-serif;
-  --font-medium: "Tajawal-Medium", sans-serif;
-  --font-regular: "Tajawal-Regular", sans-serif;
+  --font-bold: "Kufi-Bold", sans-serif;
+  --font-regular: "Kufi-Regular", sans-serif;
   --main-color: #2c85ab;
   --second-color: #0e9b49;
   --text-color: #132c37;

@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/svgs/logo.svg";
-import cloudImg from "../../assets/images/cloud.jpg";
-import partnerImg from "../../assets/images/partners.jpg";
+import cloudImg from "../../assets/images/global/cloud.jpg";
+import partnerImg from "../../assets/images/global/partners.jpg";
 import "./Header.css";
 import { useTranslation } from "react-i18next";
 
