@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import ReactTyped from "react-typed";
@@ -26,7 +26,6 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import "./Home.css";
 export default function Home() {
   const { t } = useTranslation();
-  const [collapse , setCollapse] = useState(false)
 
   const collapseHandler = (e) => {
     e.target.parentElement.classList.toggle("active");
