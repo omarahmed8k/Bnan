@@ -13,7 +13,7 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="about">
+    <div className="about-page">
       <TopBackground title="about.aboutTitle" text="about.aboutText" />
       <Fade bottom>
         <div className="about-section">
@@ -21,18 +21,12 @@ export default function About() {
           <div className="container">
             <h2 className="title">{t("about.title")}</h2>
             <p className="desc">{t("about.desc")}</p>
-
             <ImageTextSection type="row" title="about.about1Title" text="about.about1Desc" image={vision} />
-
             <ImageTextSection type="row-reverse" title="about.about2Title" text="about.about2Desc" image={mission} />
-
             <ImageTextSection type="row" title="about.about3Title" text="about.about3Desc" image={values} />
-
           </div>
-
         </div>
       </Fade>
-
     </div>
   );
 }
