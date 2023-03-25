@@ -9,7 +9,6 @@ import mission from "../../assets/images/featured/featured2.jpg";
 import values from "../../assets/images/featured/featured3.jpg";
 import "./ServicesSolutions.css";
 
-
 function ServicesSolutions() {
   const { t } = useTranslation();
   return (
