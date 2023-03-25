@@ -39,10 +39,6 @@ export default function Home() {
       });
   };
 
-  function collapseDiv(e) {
-    
-  }
-
   if (window.location.pathname === "/") {
     setTimeout(() => {
       document.querySelector(".video").playbackRate = 3;

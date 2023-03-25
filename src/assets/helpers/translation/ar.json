@@ -8,6 +8,9 @@
     "requestAQuote": "طلب عرض",
     "contact": "تواصل معنا"
   },
+  "footer": {
+    "title": "جميع الحقوق محفوظة"
+  },
   "home": {
     "background": {
       "title1": "بنان",
@@ -37,10 +40,9 @@
       "card4Desc": "خدمات"
     }
   },
-  "footer": {
-    "title": "جميع الحقوق محفوظة"
-  },
   "contact": {
+    "contactTitle": "اتصل بنا",
+    "contactText" : "اتصل بنا",
     "title": "اتصل بنا",
     "subtitle": "نحن نسعى دائما لتقديم أفضل الخدمات لعملائنا",
     "name": "الاسم",

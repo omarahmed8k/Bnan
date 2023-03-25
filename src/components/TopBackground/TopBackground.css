@@ -44,8 +44,11 @@
 
 .bacground-top .background-content p {
   font-size: 16px;
-  color: #fff;
   line-height: 2;
   font-family: var(--font-regular);
   text-transform: capitalize;
+}
+
+.bacground-top .background-content p span{
+  color: #fff;
 }

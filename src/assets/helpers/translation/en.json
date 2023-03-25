@@ -25,6 +25,24 @@
     "volumeLicensing": "Volume Licensing",
     "communicationCollaboration": "Communication & Collaboration"
   },
+  "footer": {
+    "title1": "Bana Network",
+    "desc1": "a leading provider of IT services, consulting, and business solutions",
+    "title2": "Services",
+    "title3": "Solutions",
+    "title4": "Contacts",
+    "servicesLink1": "IT Support System",
+    "servicesLink2": "Professional Services",
+    "servicesLink3": "Integration",
+    "servicesLink4": "Networking & Security",
+    "solutionLink1": "Core Infrastructure",
+    "solutionLink2": "Systems",
+    "solutionLink3": "Cloud Computing",
+    "solutionLink4": "Data Center",
+    "phone": "+966 11 488 0000",
+    "email": "info@bnansa.com",
+    "location": "Riyadh, Saudi Arabia"
+  },
   "home": {
     "background": {
       "title1": "BNAN",
@@ -39,7 +57,7 @@
       "about2Title": "Our Mission",
       "about2Desc": "Helping organizations to grow better not just bigger, focusing on efficiency and not just effectiveness.",
       "about3Title": "Our Vision",
-      "about3Desc": "To be the most customer centric company for IT solutions in the world." 
+      "about3Desc": "To be the most customer centric company for IT solutions in the world."
     },
     "services": {
       "title": "Network of the future",
@@ -64,7 +82,7 @@
       "card3Desc": "We have something for everyone and any budget, whether you're beginning from scratch or updating your services and require help establishing IT strategy or putting IT solutions into place.",
       "cardBtn": "See More"
     },
-    "testimonials":{
+    "testimonials": {
       "title": "What Our Clients Say",
       "desc": "We are proud to have worked with some of the world's most innovative companies. Here's what they have to say about us.",
       "card1Title": "Mr.Omar Almalki",
@@ -75,7 +93,21 @@
       "card3Desc": "BNAN is a great company, I am very happy with the service provided by BNAN"
     }
   },
+  "about": {
+    "aboutTitle": "About Us",
+    "aboutText": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia",
+    "title": "Who We Are",
+    "desc": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
+    "about1Title": "Our Vision",
+    "about1Desc": "To be the most customer centric company for IT solutions in the world.",
+    "about2Title": "Our Mission",
+    "about2Desc": "Helping organizations to grow better not just bigger, focusing on efficiency and not just effectiveness.",
+    "about3Title": "Our Values",
+    "about3Desc": "Quality and excellence, Integrity and honesty, Teamwork and collaboration, Customer focus, Innovation and creativity, Respect and trust."
+  },
   "contact": {
+    "contactTitle": "Contact Us",
+    "contactText": "Keep in touch with us, we are always here to help you.",
     "title": "Contact Us",
     "desc": "Keep in touch with us, we are always here to help you.",
     "name": "name",
@@ -83,23 +115,5 @@
     "email": "email",
     "message": "message",
     "send": "Send"
-  },
-  "footer": {
-    "title1": "Bana Network",
-    "desc1" : "a leading provider of IT services, consulting, and business solutions",
-    "title2": "Services",
-    "title3": "Solutions",
-    "title4": "Contacts",
-    "servicesLink1": "IT Support System",
-    "servicesLink2": "Professional Services",
-    "servicesLink3": "Integration",
-    "servicesLink4": "Networking & Security",
-    "solutionLink1": "Core Infrastructure",
-    "solutionLink2": "Systems",
-    "solutionLink3": "Cloud Computing",
-    "solutionLink4": "Data Center",
-    "phone": "+966 11 488 0000",
-    "email": "info@bnansa.com",
-    "location": "Riyadh, Saudi Arabia"
   }
 }
