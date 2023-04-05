@@ -13,3 +13,20 @@
     z-index: 1;
     transition: all 0.3s ease-in-out;
 }
+
+.partners-page .partners-section .title {
+    display: block;
+    text-align: center;
+}
+
+.partners-page .partners-section .desc {
+    text-align: center;
+}
+
+.partners-section .cards-section .card {
+    width: 100%;
+}
+
+.partners-section .cards-section .card .card-info:last-child {
+    width: 100%;
+}

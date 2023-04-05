@@ -110,24 +110,40 @@
     "servicesSolutionsText": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia",
     "title": "Who We Are",
     "desc": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
-    "servicesSolutions1Title": "Our Vision",
-    "servicesSolutions1Desc": "To be the most customer centric company for IT solutions in the world.",
-    "servicesSolutions2Title": "Our Mission",
-    "servicesSolutions2Desc": "Helping organizations to grow better not just bigger, focusing on efficiency and not just effectiveness.",
-    "servicesSolutions3Title": "Our Values",
-    "servicesSolutions3Desc": "Quality and excellence, Integrity and honesty, Teamwork and collaboration, Customer focus, Innovation and creativity, Respect and trust."
+    "card1Text": "It is intended for critical business applications to be operational.",
+    "card2Text": "It is intended for critical business applications to be operational.",
+    "card3Text": "It is intended for critical business applications to be operational.",
+    "card4Text": "It is intended for critical business applications to be operational.",
+    "card5Text": "It is intended for critical business applications to be operational.",
+    "card6Text": "It is intended for critical business applications to be operational.",
+    "card7Text": "It is intended for critical business applications to be operational.",
+    "card8Text": "It is intended for critical business applications to be operational."
   },
   "partners": {
     "partnersTitle": "Partners",
     "partnersText": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia",
     "title": "Who We Are",
     "desc": "We are a leading provider of IT services, consulting, and business solutions organization in Riyadh, Saudi Arabia. We deliver accurate results to global business, ensuring a level of certainty no other firm can match.",
-    "partners1Title": "Our Vision",
-    "partners1Desc": "To be the most customer centric company for IT solutions in the world.",
-    "partners2Title": "Our Mission",
-    "partners2Desc": "Helping organizations to grow better not just bigger, focusing on efficiency and not just effectiveness.",
-    "partners3Title": "Our Values",
-    "partners3Desc": "Quality and excellence, Integrity and honesty, Teamwork and collaboration, Customer focus, Innovation and creativity, Respect and trust."
+    "card1Text": "It is intended for critical business applications to be operational.",
+    "card2Text": "It is intended for critical business applications to be operational.",
+    "card3Text": "It is intended for critical business applications to be operational.",
+    "card4Text": "It is intended for critical business applications to be operational.",
+    "card5Text": "It is intended for critical business applications to be operational.",
+    "card6Text": "It is intended for critical business applications to be operational.",
+    "card7Text": "It is intended for critical business applications to be operational.",
+    "card8Text": "It is intended for critical business applications to be operational."
+  },
+  "solutions": {
+    "solutionsTitle": "solutions",
+    "solutionsText": "We are a leading provider of IT services",
+    "title": "Who We Are",
+    "desc": "We are a leading provider of IT services. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
+  },
+  "services": {
+    "servicesTitle": "services",
+    "servicesText": "We are a leading provider of IT services",
+    "title": "Who We Are",
+    "desc": "We are a leading provider of IT services. We deliver accurate results to global business, ensuring a level of certainty no other firm can match."
   },
   "contact": {
     "contactTitle": "Contact Us",

@@ -3,3 +3,16 @@
     min-height: 100vh;
     overflow: hidden;
 }
+
+.services-page .services-section .title {
+    display: block;
+    text-align: center;
+}
+
+.services-page .services-section .desc {
+    text-align: center;
+}
+
+.services-section .cards-section .card {
+    width: 100%;
+}
