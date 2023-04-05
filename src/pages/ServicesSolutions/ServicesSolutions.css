@@ -108,6 +108,10 @@
     overflow: hidden;
 }
 
+.cards-section .card .cards .card-info:hover .card-btn {
+    background-color: #ffffff50;
+}
+
 .cards-section .card .cards .card-info svg {
     width: 100%;
     height: 100%;

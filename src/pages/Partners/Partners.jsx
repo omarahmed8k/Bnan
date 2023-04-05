@@ -30,7 +30,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.itServiceManagement")}</h3>
                     <p>{t("partners.card1Text")}</p>
-                    <Link to={`/partners/it-support-system`} className="card-btn">
+                    <Link to={`/partners/it-service-management`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
@@ -39,7 +39,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.cloudInfrastructure")}</h3>
                     <p>{t("partners.card2Text")}</p>
-                    <Link to={`/partners/integration`} className="card-btn">
+                    <Link to={`/partners/cloud-infrastructure`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
@@ -48,7 +48,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.iTSecurity")}</h3>
                     <p>{t("partners.card3Text")}</p>
-                    <Link to={`/partners/professional-partners`} className="card-btn">
+                    <Link to={`/partners/it-security`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
@@ -57,7 +57,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.businessApplication")}</h3>
                     <p>{t("partners.card4Text")}</p>
-                    <Link to={`/partners/networking-security`} className="card-btn">
+                    <Link to={`/partners/business-application`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
@@ -66,7 +66,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.backupRecovery")}</h3>
                     <p>{t("partners.card5Text")}</p>
-                    <Link to={`/partners/it-support-system`} className="card-btn">
+                    <Link to={`/partners/backup-recovery`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
@@ -75,7 +75,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.volumeLicensing")}</h3>
                     <p>{t("partners.card6Text")}</p>
-                    <Link to={`/partners/integration`} className="card-btn">
+                    <Link to={`/partners/volume-licensing`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
@@ -84,7 +84,7 @@ function Partners() {
                   }}>
                     <h3>{t("header.communicationCollaboration")}</h3>
                     <p>{t("partners.card7Text")}</p>
-                    <Link to={`/partners/professional-partners`} className="card-btn">
+                    <Link to={`/partners/communication-collaboration`} className="card-btn">
                       <Arrow />
                     </Link>
                   </div>
