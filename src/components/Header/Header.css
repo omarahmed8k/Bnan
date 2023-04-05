@@ -9,6 +9,7 @@
   background: transparent;
   height: 60px;
   background-color: #00000099;
+  box-shadow: 0 0 10px #00000020;
   z-index: 101;
 }
 

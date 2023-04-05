@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ReactTyped from "react-typed";
 import { Fade } from "react-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -71,28 +71,28 @@ export default function Home() {
             <h2 className="title">{t("home.services.title")}</h2>
             <p className="desc">{t("home.services.desc")}</p>
             <div className="services-links">
-              <Link to={"/service/network"} className="services-card">
+              <Link to={"/services/it-support-system"} className="services-card">
                 <div className="card-head">
                   <ServiceImg1 />
                   <h3>{t("home.services.card1Title")}</h3>
                 </div>
                 <p>{t("home.services.card1Desc")}</p>
               </Link>
-              <Link to={"/service/network"} className="services-card">
+              <Link to={"/services/professional-services"} className="services-card">
                 <div className="card-head">
                   <ServiceImg2 />
                   <h3>{t("home.services.card2Title")}</h3>
                 </div>
                 <p>{t("home.services.card2Desc")}</p>
               </Link>
-              <Link to={"/service/network"} className="services-card">
+              <Link to={"/services/integration"} className="services-card">
                 <div className="card-head">
                   <ServiceImg3 />
                   <h3>{t("home.services.card3Title")}</h3>
                 </div>
                 <p>{t("home.services.card3Desc")}</p>
               </Link>
-              <Link to={"/service/network"} className="services-card">
+              <Link to={"/services/networking-security"} className="services-card">
                 <div className="card-head">
                   <ServiceImg4 />
                   <h3>{t("home.services.card4Title")}</h3>
