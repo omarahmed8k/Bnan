@@ -239,6 +239,8 @@ ul {
   width: 100%;
   font-weight: 700;
   margin-bottom: 50px;
+  letter-spacing: 1px;
+  line-height: 2;
 }
 
 .fixed-logo {

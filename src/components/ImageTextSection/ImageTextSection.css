@@ -14,13 +14,13 @@
 
 .image-text-section.row {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 .image-text-section.row-reverse {
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
