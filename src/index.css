@@ -1,4 +1,6 @@
 /* ! Defaults */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
 /* Arabic-Fonts */
 @font-face {
   font-family: "Kufi-Bold";
@@ -12,11 +14,16 @@
 
 /* Main Values */
 :root {
-  --font-bold: "Kufi-Bold", sans-serif;
-  --font-regular: "Kufi-Regular", sans-serif;
+  --font-bold: "Roboto Condensed", sans-serif;
+  --font-regular: "Roboto Condensed", sans-serif;
   --main-color: #2c85ab;
   --second-color: #0e9b49;
   --text-color: #132c37;
+}
+
+[dir="rtl"]:root {
+  --font-bold: "Kufi-Bold", sans-serif;
+  --font-regular: "Kufi-Regular", sans-serif;
 }
 
 /* Scroll Bar */
@@ -142,21 +149,23 @@ ul {
 }
 
 .main-btn {
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-repeat: no-repeat;
   color: #fff;
-  padding: 5px 25px;
+  padding: 10px 25px;
   line-height: 1.5;
   border-radius: 100px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: var(--font-bold);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+[dir="rtl"] .main-btn {
+  padding: 5px 25px;
 }
 
 .main-btn:hover {
@@ -171,7 +180,7 @@ ul {
   line-height: 2;
   border-radius: 100px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: var(--font-bold);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -190,7 +199,7 @@ ul {
   line-height: 2;
   border-radius: 100px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: var(--font-bold);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -212,11 +221,9 @@ ul {
   font-size: 48px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -230,7 +237,7 @@ ul {
   margin-bottom: 50px;
   text-transform: capitalize;
   width: 100%;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 50px;
 }
 
@@ -269,6 +276,7 @@ ul {
   .container {
     max-width: 768px;
   }
+
   .title {
     font-size: 48px;
   }
@@ -278,6 +286,7 @@ ul {
   .container {
     max-width: 576px;
   }
+
   .typed {
     font-size: 60px;
   }

@@ -46,11 +46,9 @@
   text-align: center;
   font-size: 68px;
   margin-bottom: 25px;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,9 +61,11 @@
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 100% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -132,11 +132,9 @@
 }
 
 .services-section .services-links .services-card:hover::before {
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   opacity: 0.2;
   transform: translateY(0);
 }
@@ -159,11 +157,9 @@
 .services-section .services-links .services-card .card-head h3 {
   width: calc(100% - 125px);
   font-size: 24px;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -196,13 +192,13 @@
   gap: 20px;
 }
 
-.about-section .about-flex > * {
+.about-section .about-flex>* {
   width: calc(100% / 2 - 10px);
 }
 
 .about-section .about-flex .about-img {
   position: relative;
-  height: 700px;
+  height: 600px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
@@ -215,11 +211,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   transition: all 0.3s ease-in-out;
   opacity: 0.2;
 }
@@ -243,12 +237,11 @@
 .about-section .about-flex .about-img:hover::after {
   opacity: 1;
 }
+
 .about-section .about-flex .about-img:hover::before {
-  background: linear-gradient(
-    -118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(-118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
 }
 
 .about-section .about-flex .about-img img {
@@ -271,17 +264,16 @@
 .about-section .about-flex .about-content h2 {
   font-size: 48px;
   text-transform: capitalize;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animateText 3s linear infinite;
   background-size: 200% 100%;
 }
+
 .about-section .about-flex .about-content p {
   font-size: 18px;
   line-height: 1.5;
@@ -290,20 +282,20 @@
   color: var(--text-color);
   margin-bottom: 0px;
 }
+
 .about-section .about-flex .about-content h4 {
   font-size: 24px;
   text-transform: capitalize;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animateText 3s linear infinite;
   background-size: 200% 100%;
 }
+
 .about-section .about-flex .about-content h6 {
   font-size: 18px;
   line-height: 1.5;
@@ -311,6 +303,7 @@
   text-transform: capitalize;
   color: var(--text-color);
 }
+
 .about-section .about-flex .about-content .about-collapse {
   position: relative;
   width: 100%;
@@ -321,6 +314,7 @@
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+
 .about-section .about-flex .about-content .about-collapse::after {
   content: "";
   position: absolute;
@@ -334,6 +328,7 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
+
 .about-section .about-flex .about-content .about-collapse::before {
   content: "";
   position: absolute;
@@ -345,15 +340,19 @@
   background: #2c85ab30;
   transition: all 0.3s ease-in-out;
 }
+
 .about-section .about-flex .about-content .about-collapse:hover::before {
   background: #2c85ab;
 }
+
 .about-section .about-flex .about-content .about-collapse.active::before {
   background: #2c85ab;
 }
+
 .about-section .about-flex .about-content .about-collapse:hover::after {
   border-top: 10px solid #fff;
 }
+
 .about-section .about-flex .about-content .about-collapse.active::after {
   transform: translateY(-50%) rotate(180deg);
   border-top: 10px solid #fff;
@@ -442,13 +441,19 @@
 }
 
 .featured-section .featured-grid .featured-card .featured-content p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  margin-bottom: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+[dir="rtl"] .featured-section .featured-grid .featured-card .featured-content p {
+  letter-spacing: 0;
 }
 
 .featured-section .featured-grid .featured-card .featured-content a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--main-color);
   text-decoration: none;
@@ -497,11 +502,9 @@
   text-align: left;
   font-size: 68px;
   margin-bottom: 25px;
-  background: linear-gradient(
-    118deg,
-    var(--main-color) 25%,
-    var(--second-color) 75%
-  );
+  background: linear-gradient(118deg,
+      var(--main-color) 25%,
+      var(--second-color) 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -546,11 +549,13 @@
   object-fit: cover;
   margin-bottom: 25px;
 }
+
 .testimonials-section .swiper .swiper-card h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .testimonials-section .swiper .swiper-card p {
   font-size: 14px;
   font-weight: 400;
@@ -561,18 +566,22 @@
   .video-section::before {
     background: #00000055;
   }
+
   .video-section .content h1 {
     font-size: 48px;
   }
+
   .video-section .content p {
     width: 100%;
     font-family: var(--font-bold);
+    font-weight: 700;
     color: #fff;
   }
 
   .services-section .desc {
     width: 100%;
     font-family: var(--font-bold);
+    font-weight: 700;
   }
 
   .services-section .services-links {
@@ -614,6 +623,7 @@
     font-size: 16px;
     text-align: center;
     font-family: var(--font-bold);
+    font-weight: 700;
   }
 
   .about-section {
@@ -625,7 +635,7 @@
     gap: 50px;
   }
 
-  .about-section .about-flex > * {
+  .about-section .about-flex>* {
     width: 100%;
   }
 
@@ -652,19 +662,23 @@
   .about-section .about-flex .about-content p {
     font-size: 16px;
   }
+
   .about-section .about-flex .about-content .about-collapse {
     padding: 0px;
   }
+
   .about-section .about-flex .about-content .about-collapse::after {
     top: 12.5px;
     right: 5px;
   }
+
   .about-section .about-flex .about-content .about-collapse::before {
     top: 0px;
     right: 0px;
     width: 30px;
     height: 30px;
   }
+
   .featured-section {
     padding: 70px 0px;
   }

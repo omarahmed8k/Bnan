@@ -7,8 +7,8 @@ import ImageTextSection from "../../components/ImageTextSection/ImageTextSection
 import vision from "../../assets/images/featured/featured1.jpg";
 import mission from "../../assets/images/featured/featured2.jpg";
 import values from "../../assets/images/featured/featured3.jpg";
-import "./Partners.css";
 import { Outlet } from "react-router-dom";
+import "./Partners.css";
 
 function Partners() {
   const { t } = useTranslation();

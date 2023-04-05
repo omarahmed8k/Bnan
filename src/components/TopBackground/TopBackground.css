@@ -35,6 +35,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: var(--font-bold);
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -49,6 +50,6 @@
   text-transform: capitalize;
 }
 
-.bacground-top .background-content p span{
+.bacground-top .background-content p span {
   color: #fff;
 }

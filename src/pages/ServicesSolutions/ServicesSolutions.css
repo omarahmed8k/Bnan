@@ -1,3 +1,9 @@
+.services-solutions-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .services-solutions-section {
     position: relative;
     padding: 80px 0;

@@ -5,7 +5,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className="contact-page">
       <TopBackground title="contact.contactTitle" text="contact.contactText" />
       <ContactForm />
     </div>

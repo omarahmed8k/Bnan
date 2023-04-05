@@ -75,6 +75,7 @@
 .header ul li .nav-links a.active {
   color: var(--main-color);
   font-family: var(--font-bold);
+  font-weight: 700;
 }
 
 .header .has-menu {
@@ -135,8 +136,7 @@
   overflow: hidden;
 }
 
-.header .has-menu .menu ul li h4 {
-}
+.header .has-menu .menu ul li h4 {}
 
 .header .has-menu .menu ul li a {
   position: relative;
@@ -176,10 +176,10 @@
 
 .header .has-menu .menu ul li h4 a {
   font-size: 20px;
-  font-weight: 600;
   color: var(--text-color);
   margin-bottom: 10px;
   font-family: var(--font-bold);
+  font-weight: 700;
   padding: 0;
   line-height: 1.5;
 }
@@ -198,6 +198,7 @@
   .header {
     background: #ffffff;
   }
+
   .header ul li .nav-links {
     display: none;
   }

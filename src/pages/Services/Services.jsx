@@ -4,7 +4,7 @@ import ContentArea from "../../components/ContentArea/ContentArea";
 
 export default function Services() {
   return (
-    <div className="services">
+    <div className="services-page">
       <ContentArea title="Services" text="Our partners are the best!">
         <p>Services</p>
       </ContentArea>
