@@ -7,7 +7,6 @@ import ImageTextSection from "../../components/ImageTextSection/ImageTextSection
 import vision from "../../assets/images/featured/featured1.jpg";
 import mission from "../../assets/images/featured/featured2.jpg";
 import values from "../../assets/images/featured/featured3.jpg";
-import { Outlet } from "react-router-dom";
 import "./Partners.css";
 
 function Partners() {
@@ -15,7 +14,6 @@ function Partners() {
   return (
     <div className="partners-page">
       <TopBackground title="partners.partnersTitle" text="partners.partnersText" />
-      <Outlet />
       <Fade bottom>
         <div className="partners-section">
           <FixedLogo className="fixed-logo" />

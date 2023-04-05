@@ -22,7 +22,7 @@ export default function Header() {
             <li>
               <ul className="nav-links">
                 <li>
-                  <NavLink to={`/`}>{t("header.home")}</NavLink>
+                  <Link to={`/`}>{t("header.home")}</Link>
                 </li>
                 <li>
                   <NavLink to={`/about`}>{t("header.about")}</NavLink>
