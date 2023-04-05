@@ -19,31 +19,31 @@ export default function Footer() {
             </div>
             <div className="footer-item">
               <h3>{t("footer.title2")}</h3>
-              <Link to={"services/it-support-system"} className="footer-link">
+              <Link to={"/services/it-support-system"} className="footer-link">
                 {t("footer.solutionLink1")}
               </Link>
-              <Link to={"services/professional-services"} className="footer-link">
+              <Link to={"/services/professional-services"} className="footer-link">
                 {t("footer.solutionLink2")}
               </Link>
-              <Link to={"services/integration"} className="footer-link">
+              <Link to={"/services/integration"} className="footer-link">
                 {t("footer.solutionLink3")}
               </Link>
-              <Link to={"services/networking-security"} className="footer-link">
+              <Link to={"/services/networking-security"} className="footer-link">
                 {t("footer.solutionLink4")}
               </Link>
             </div>
             <div className="footer-item">
               <h3>{t("footer.title3")}</h3>
-              <Link to={"solutions/core-infrastructure"} className="footer-link">
+              <Link to={"/solutions/core-infrastructure"} className="footer-link">
                 {t("footer.servicesLink1")}
               </Link>
-              <Link to={"solutions/systems"} className="footer-link">
+              <Link to={"/solutions/systems"} className="footer-link">
                 {t("footer.servicesLink2")}
               </Link>
-              <Link to={"solutions/cloud-computing"} className="footer-link">
+              <Link to={"/solutions/cloud-computing"} className="footer-link">
                 {t("footer.servicesLink3")}
               </Link>
-              <Link to={"solutions/data-center"} className="footer-link">
+              <Link to={"/solutions/data-center"} className="footer-link">
                 {t("footer.servicesLink4")}
               </Link>
             </div>

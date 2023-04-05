@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/svgs/logo.svg";
+import { ReactComponent as Menu } from "../../assets/images/svgs/menu.svg";
 import cloudImg from "../../assets/images/global/cloud.jpg";
 import partnerImg from "../../assets/images/global/partners.jpg";
-import "./Header.css";
 import { useTranslation } from "react-i18next";
+import "./Header.css";
 
 export default function Header() {
+  const [menuToggle, setMenuToggle] = useState(false);
   const { t } = useTranslation();
 
   return (
@@ -20,14 +22,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <ul className="nav-links">
-                <li>
+              <ul className={`nav-links ${menuToggle && "show"}`}>
+                <li onClick={() => { setMenuToggle(!menuToggle) }}>
                   <Link to={`/`}>{t("header.home")}</Link>
                 </li>
-                <li>
+                <li onClick={() => { setMenuToggle(!menuToggle) }}>
                   <NavLink to={`/about`}>{t("header.about")}</NavLink>
                 </li>
-                <li className="has-menu">
+                <li className="has-menu" onClick={() => { setMenuToggle(!menuToggle) }}>
                   <NavLink to={`/services-and-solutions`}>
                     {t("header.technologySolutions")}
                   </NavLink>
@@ -77,7 +79,7 @@ export default function Header() {
                     </ul>
                   </div>
                 </li>
-                <li className="has-menu">
+                <li className="has-menu" onClick={() => { setMenuToggle(!menuToggle) }}>
                   <NavLink to={`/partners`}>{t("header.partners")}</NavLink>
                   <div className="menu">
                     <ul className="container">
@@ -120,12 +122,15 @@ export default function Header() {
                     </ul>
                   </div>
                 </li>
-                <li>
+                <li onClick={() => { setMenuToggle(!menuToggle) }}>
                   <NavLink to={`/contact`}>{t("header.contact")}</NavLink>
                 </li>
               </ul>
             </li>
             <li>
+              <button className="menu-btn" onClick={() => { setMenuToggle(!menuToggle) }}>
+                <Menu />
+              </button>
               <Link to={`/contact`} className="main-btn">
                 {t("header.requestAQuote")}
               </Link>

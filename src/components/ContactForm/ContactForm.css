@@ -157,3 +157,9 @@
 [dir="rtl"] .contact-form .content form button {
   letter-spacing: 0px;
 }
+
+@media (max-width: 991px) {
+  .contact-form .content form {
+    width: 90%;
+  }
+}
